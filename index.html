@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <script
+            src="https://kit.fontawesome.com/482b035308.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="index.js" defer></script>
+        <title>Music player</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="visualizer">
+                <video src="assets/video.mp4" width="100%" muted loop>
+                    Video not supported
+                </video>
+            </div>
+            <div class="player-container">
+                <div class="player">
+                    <div class="control">
+                        <div
+                            class="btn"
+                            id="visualize"
+                            title="Turn on visualizer"
+                        >
+                            <i class="fa-solid fa-film"></i>
+                        </div>
+                        <div class="btn" id="back" title="Go back">
+                            <i class="fa-solid fa-backward"></i>
+                        </div>
+                        <div class="btn" id="play" title="Play/Pause">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="btn" id="forward" title="Go forward">
+                            <i class="fa-solid fa-forward"></i>
+                        </div>
+                        <div class="btn" id="reset" title="Reset">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div id="filler"></div>
+                        <div id="tick"></div>
+                    </div>
+                    <audio src="assets/audio.m4a"></audio>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
